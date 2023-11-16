@@ -23,7 +23,7 @@ def sin(number):
 
     Args:
         number (int): number of x-values between 0 and 2 pi
-    """    
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -43,11 +43,12 @@ def tan(number):
 
     Args:
         number (int): number of x-values between 0 and 2 pi
-    """    
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
     return
+
 
 if __name__ == "__main__":
     geometric_group()
