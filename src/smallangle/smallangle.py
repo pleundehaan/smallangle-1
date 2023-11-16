@@ -11,7 +11,6 @@ def geometric_group():
 
 
 @geometric_group.command()
-# number is the number of steps between 0 and 2 pi
 @click.option(
     "-n",
     "--number",
@@ -20,6 +19,11 @@ def geometric_group():
     show_default=True,  # show default in help
 )
 def sin(number):
+    """gives the sinus values between 0 and 2 pi in a certain amount of steps (number)
+
+    Args:
+        number (int): number of x-values between 0 and 2 pi
+    """    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -27,7 +31,6 @@ def sin(number):
 
 
 @geometric_group.command()
-# number is the number of steps between 0 and 2 pi
 @click.option(
     "-n",
     "--number",
@@ -36,11 +39,15 @@ def sin(number):
     show_default=True,  # show default in help
 )
 def tan(number):
+    """gives the tangens values between 0 and 2 pi in a certain amount of steps (number)
+
+    Args:
+        number (int): number of x-values between 0 and 2 pi
+    """    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
     return
-
 
 if __name__ == "__main__":
     geometric_group()
