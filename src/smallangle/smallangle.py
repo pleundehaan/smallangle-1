@@ -19,7 +19,7 @@ def geometric_group():
     show_default=True,  # show default in help
 )
 def sin(number):
-    """gives the sinus values between 0 and 2 pi in a certain amount of steps (number)
+    """gives the sinus values between 0 and 2 pi
 
     Args:
         number (int): number of x-values between 0 and 2 pi
@@ -39,7 +39,7 @@ def sin(number):
     show_default=True,  # show default in help
 )
 def tan(number):
-    """gives the tangens values between 0 and 2 pi in a certain amount of steps (number)
+    """gives the tangens values between 0 and 2 pi
 
     Args:
         number (int): number of x-values between 0 and 2 pi
